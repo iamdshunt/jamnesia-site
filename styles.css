@@ -107,4 +107,5 @@ p{margin:0;max-width:62ch}
 .gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
 .gallery img{width:100%;height:100%;aspect-ratio:3/4;object-fit:cover;border-radius:10px}
 @media (max-width:760px){.gallery{grid-template-columns:repeat(2,1fr)}}
+.feature{width:100%;height:auto;border-radius:14px}
 [hidden]{display:none!important}
