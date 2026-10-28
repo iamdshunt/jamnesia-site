@@ -114,4 +114,8 @@ p{margin:0;max-width:62ch}
 .orig p{color:var(--muted)}
 .listen{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
 .listen .btn{padding:9px 18px;font-size:.95rem}
+.merch{grid-template-columns:auto 1fr;align-items:center;gap:clamp(24px,5vw,56px)}
+.merch img{width:clamp(80px,14vw,140px);height:auto;filter:drop-shadow(0 0 18px rgba(232,73,140,.55))}
+.merch .copy{display:grid;gap:12px;min-width:0}
+@media (max-width:560px){.merch{grid-template-columns:1fr}}
 [hidden]{display:none!important}
