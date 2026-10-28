@@ -14,7 +14,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
-<link rel="stylesheet" href="styles.css?v=5">
+<link rel="stylesheet" href="styles.css?v=6">
 </head>
 <body>
 <header class="topbar">
@@ -98,13 +98,24 @@
   <section id="originals" class="band">
     <div class="inner">
       <h2>Our own <span class="neon">music</span></h2>
-      <p>Away from the covers, we write and record our own songs. Here are the originals we've recorded together. Press play, or open them in Spotify.</p>
-      <div class="players">
-        <iframe title="Spotify player: original song by DSHunt and Vix Malone (1 of 4)" src="https://open.spotify.com/embed/album/3ajYEHu7Pnhoz3pPMexD6r?utm_source=generator&amp;theme=0" width="100%" height="152" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-        <iframe title="Spotify player: original song by DSHunt and Vix Malone (2 of 4)" src="https://open.spotify.com/embed/album/3HZHXHnkPXRDZsHKVJNher?utm_source=generator&amp;theme=0" width="100%" height="152" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-        <iframe title="Spotify player: original song by DSHunt and Vix Malone (3 of 4)" src="https://open.spotify.com/embed/album/4gTmnJJ5OrcEtBIkJpQyx5?utm_source=generator&amp;theme=0" width="100%" height="152" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-        <iframe title="Spotify player: original song by DSHunt and Vix Malone (4 of 4)" src="https://open.spotify.com/embed/album/7EepK5FUv7gW8H3x9gJTAX?utm_source=generator&amp;theme=0" width="100%" height="152" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      <p>Away from the covers, we write and record our own songs. Here are the originals we've recorded together. Pick where you listen and press play.</p>
+      <div class="stream-tabs" role="tablist" aria-label="Choose a streaming service">
+        <button type="button" role="tab" id="tab-spotify" aria-controls="players-spotify" aria-selected="true">Spotify</button>
+        <button type="button" role="tab" id="tab-apple" aria-controls="players-apple" aria-selected="false">Apple Music</button>
       </div>
+      <div class="players" id="players-spotify" role="tabpanel" aria-labelledby="tab-spotify">
+          <iframe title="Sleep on Spotify" src="https://open.spotify.com/embed/album/3ajYEHu7Pnhoz3pPMexD6r?utm_source=generator&amp;theme=0" width="100%" height="152" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          <iframe title="Predictable on Spotify" src="https://open.spotify.com/embed/album/3HZHXHnkPXRDZsHKVJNher?utm_source=generator&amp;theme=0" width="100%" height="152" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          <iframe title="Day I Die on Spotify" src="https://open.spotify.com/embed/album/4gTmnJJ5OrcEtBIkJpQyx5?utm_source=generator&amp;theme=0" width="100%" height="152" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          <iframe title="Stardust (piano lounge edit) on Spotify" src="https://open.spotify.com/embed/album/7EepK5FUv7gW8H3x9gJTAX?utm_source=generator&amp;theme=0" width="100%" height="152" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      </div>
+      <div class="players" id="players-apple" role="tabpanel" aria-labelledby="tab-apple" hidden>
+          <iframe title="Sleep on Apple Music" src="https://embed.music.apple.com/gb/album/sleep-feat-vix-malone/1823016669?i=1823016671" width="100%" height="175" allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" loading="lazy"></iframe>
+          <iframe title="Predictable on Apple Music" src="https://embed.music.apple.com/gb/album/predictable-feat-vix-malone/1719791019?i=1719791021" width="100%" height="175" allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" loading="lazy"></iframe>
+          <iframe title="Day I Die on Apple Music" src="https://embed.music.apple.com/gb/album/day-i-die-feat-vix-malone/1676365391?i=1676365392" width="100%" height="175" allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" loading="lazy"></iframe>
+          <iframe title="Stardust (piano lounge edit) on Apple Music" src="https://embed.music.apple.com/gb/album/stardust-piano-lounge-edit-single/1874524815" width="100%" height="175" allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" loading="lazy"></iframe>
+      </div>
+      <p class="note">Our music is available on all major streaming platforms.</p>
     </div>
   </section>
 
@@ -126,8 +137,14 @@
       <div class="copy">
         <p class="kicker">Coming soon</p>
         <h2>Pink Fox <span class="neon">merch</span></h2>
-        <p>Tees, hoodies and more with the pink fox on. Follow <a href="https://www.instagram.com/jamnesiaukband" rel="noopener" target="_blank">@jamnesiaukband</a> to be first to know when it drops.</p>
+        <p>Tees named after our own songs, with a little pink fox. Follow <a href="https://www.instagram.com/jamnesiaukband" rel="noopener" target="_blank">@jamnesiaukband</a> to be first to know when they drop.</p>
       </div>
+    </div>
+    <div class="inner tees">
+        <figure><img src="images/tee-sleep.jpg" alt="Black tee printed with Sleep" width="504" height="462" loading="lazy"><figcaption>Sleep</figcaption></figure>
+        <figure><img src="images/tee-predictable.jpg" alt="Black tee printed with Predictable" width="504" height="462" loading="lazy"><figcaption>Predictable</figcaption></figure>
+        <figure><img src="images/tee-day-i-die.jpg" alt="Black tee printed with Day I Die" width="504" height="462" loading="lazy"><figcaption>Day I Die</figcaption></figure>
+        <figure><img src="images/tee-stardust.jpg" alt="Black tee printed with Stardust" width="504" height="462" loading="lazy"><figcaption>Stardust</figcaption></figure>
     </div>
   </section>
 
@@ -160,6 +177,7 @@
     <p class="small">Follow the pink fox · © 2026 Jamnesia Band UK · DSHunt &amp; Vix Malone</p>
   </div>
 </footer>
+<script>/* streaming tabs */(function(){var tabs=document.querySelectorAll(".stream-tabs [role=tab]");tabs.forEach(function(b){b.addEventListener("click",function(){tabs.forEach(function(o){var on=o===b;o.setAttribute("aria-selected",on);document.getElementById(o.getAttribute("aria-controls")).hidden=!on;});});});})();</script>
 <script>/* hide gigs once their day has passed */(function(){var t=new Date();t.setHours(0,0,0,0);document.querySelectorAll(".gigs time[datetime]").forEach(function(el){if(new Date(el.getAttribute("datetime"))<t)el.closest("li").hidden=true;});})();</script>
 </body>
 </html>
