@@ -26,7 +26,8 @@ p{margin:0;max-width:62ch}
 .topbar{position:sticky;top:0;z-index:10;background:rgba(18,12,24,.88);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
 .topbar .inner{display:flex;align-items:center;justify-content:space-between;gap:16px;height:60px}
 .brand{display:inline-flex;align-items:center;gap:10px;font:700 1.15rem/1 var(--display);letter-spacing:.06em;color:var(--text);text-decoration:none;margin:0}
-.brand img{filter:drop-shadow(0 0 6px rgba(232,73,140,.6))}
+.brand .fox{filter:drop-shadow(0 0 6px rgba(232,73,140,.6))}
+.brand .wm{height:18px;width:auto}
 .brand span{font:500 .6rem/1 var(--mono);letter-spacing:.14em;color:var(--amber);border:1.5px solid var(--amber);border-radius:3px;padding:2px 5px;vertical-align:.35em}
 .topbar nav{display:flex;gap:20px;align-items:center}
 .topbar nav a{color:var(--muted);text-decoration:none;font-weight:500;font-size:.95rem}
