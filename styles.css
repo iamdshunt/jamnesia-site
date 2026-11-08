@@ -133,3 +133,8 @@ p{margin:0;max-width:62ch}
 .tees img{width:100%;height:auto;aspect-ratio:504/462;object-fit:cover;border-radius:10px}
 .tees figcaption{font-size:.85rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;opacity:.8}
 @media (max-width:760px){.tees{grid-template-columns:repeat(2,1fr)}}
+.vh-badge{display:flex;align-items:center;gap:20px;max-width:640px;padding:14px 18px;border:1px solid var(--line);border-radius:14px;background:#000}
+.vh-badge img{width:min(220px,45%);height:auto;flex:none}
+.vh-badge p{margin:0}
+.vh-badge .kicker{margin-bottom:4px}
+@media (max-width:560px){.vh-badge{flex-direction:column;align-items:flex-start}.vh-badge img{width:100%}}
